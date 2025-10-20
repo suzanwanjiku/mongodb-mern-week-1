@@ -10,13 +10,13 @@ async function main(){
     await Task.deleteMany({});
 
     await User.insertMany([
-        { name: "Alice Kariuki", email: "alice@example.com", role: "admin" },
-        { name: "Dedan Okware", email: "dedan@plp.com" }
+        { name: "Eunice Wanjiru", email: "eunice@example.com", role: "admin" },
+        { name: "Susan Wanjiku", email: "susan@example.com" }
     ]);
 
     await Task.insertMany([
-        { title: "Write Proposal", status: "todo", owner: "Alice" },
-        { title: "Design Schema", status: "in_progress", owner: "Dedan" }
+        { title: "Write Proposal", status: "todo", owner: "eunice" },
+        { title: "Design Schema", status: "in_progress", owner: "susan" }
     ]);
 
     console.log("Data populated");
